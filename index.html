@@ -15,31 +15,33 @@
 
     <div class="input-calc">
         <div class="input">
-            <form name="calculator"><input data-previus type="text" placeholder="0" id="input" name="input"></form></div>
+            <form name="calculator"><input data-previus type="text" placeholder="0" id="input" name="input"></form>
+        </div>
+    </div>
+    <div class="calculator-main">
+        <button onclick="calculator.input.value = ''" class="color-top ac">AC</button>
+        <button onclick="pow(this)" class="color-top tv">^</button>
+        <button onclick="pow(this)" class="color-top co Percentage">%</button>
+        <button class="color-right co">/</button>
+        <button class="number">7</button>
+        <button class="number">8</button>
+        <button class="number">9</button>
+        <button onclick="pow(this)" class="color-right co">*</button>
+        <button class="number">4</button>
+        <button class="number">5</button>
+        <button class="number">6</button>
+        <button onclick="pow(this)" class="color-right co">-</button>
+        <button class="number">1</button>
+        <button class="number">2</button>
+        <button class="number">3</button>
+        <button onclick="pow(this)" class="color-right co">+</button>
+        <button onclick="" class="back">&#8678</button>
+        <button class="number">0</button>
+        <button class="co">.</button>
+        <button class="color-right eval" onclick="ev()">=</button>
+    </div>
 </div>
-<div class="calculator-main">
-    <button onclick="calculator.input.value = ''" class="color-top" >AC</button>
-    <button onclick="calculator.input.value += '^'" class="color-top" >^</button>
-    <button onclick="calculator.input.value += '%'" class="color-top" >%</button>
-    <button onclick="calculator.input.value += '/'" class="color-right">/</button>
-    <button onclick="calculator.input.value += '7'">7</button>
-    <button onclick="calculator.input.value += '8'">8</button>
-    <button onclick="calculator.input.value += '9'">9</button>
-    <button onclick="calculator.input.value += '*'" class="color-right" >*</button>
-    <button onclick="calculator.input.value += '4'">4</button>
-    <button onclick="calculator.input.value += '5'">5</button>
-    <button onclick="calculator.input.value += '6'">6</button>
-    <button onclick="calculator.input.value += '-'" class="color-right" >-</button>
-    <button onclick="calculator.input.value += '1'">1</button>
-    <button onclick="calculator.input.value += '2'">2</button>
-    <button onclick="calculator.input.value += '3'">3</button>
-    <button onclick="calculator.input.value += '+'" class="color-right">+</button>
-    <button onclick="calculator.input.value=calculator.input.value.slice(0,-1) ">&#8678</button>
-    <button onclick="calculator.input.value += '0'">0</button>
-    <button onclick="calculator.input.value += '.'" >.</button>
-    <button onclick="calculator.input.value = eval(calculator.input.value)" class="color-right" >=</button>
-</div>
-</div>
+<script src="script.js"></script>
 </body>
 
 </html>
