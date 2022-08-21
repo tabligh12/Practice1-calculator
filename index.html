@@ -15,29 +15,33 @@
 
     <div class="input-calc">
         <div class="input">
-            <form name="calculator"><input data-previus type="text" placeholder="0" id="input" name="input"></form>
+            <form name="calculator">
+                <input data-previus type="text" placeholder="0" id="input" name="input">
+                <input data-previus type="hidden" placeholder="0" id="input2" name="input">
+            </form>
+
         </div>
     </div>
     <div class="calculator-main">
         <button onclick="calculator.input.value = ''" class="color-top ac">AC</button>
-        <button onclick="pow(this)" class="color-top tv">^</button>
-        <button onclick="pow(this)" class="color-top co Percentage">%</button>
+        <button  class="color-top co">^</button>
+        <button  class="color-top co Percentage">%</button>
         <button class="color-right co">/</button>
         <button class="number">7</button>
         <button class="number">8</button>
         <button class="number">9</button>
-        <button onclick="pow(this)" class="color-right co">*</button>
+        <button  class="color-right co">*</button>
         <button class="number">4</button>
         <button class="number">5</button>
         <button class="number">6</button>
-        <button onclick="pow(this)" class="color-right co">-</button>
+        <button  class="color-right co">-</button>
         <button class="number">1</button>
         <button class="number">2</button>
         <button class="number">3</button>
         <button onclick="pow(this)" class="color-right co">+</button>
-        <button onclick="" class="back">&#8678</button>
+        <button class="back">&#8678</button>
         <button class="number">0</button>
-        <button class="co">.</button>
+        <button class="au">.</button>
         <button class="color-right eval" onclick="ev()">=</button>
     </div>
 </div>
